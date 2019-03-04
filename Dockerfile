@@ -1,7 +1,8 @@
 FROM php:7.0-apache
 
-RUN apt-get update && \
-    apt-get install -y php5-mysql && \
-    apt-get clean
+RUN yum update && \
+    yum install -y php5-mysql && \
+    yum clean
 
 COPY myapp /var/www/html/ 
+
