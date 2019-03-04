@@ -1,8 +1,4 @@
-FROM php:7.0-apache
-
-RUN apt-get update && \
-    apt-get -y php5-mysql && \
-    apt-get clean
+FROM httpd:myhttpd
 COPY myapp /var/www/html/ 
 
 
