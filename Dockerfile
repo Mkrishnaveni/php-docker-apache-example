@@ -1,4 +1,4 @@
-FROM httpd:latest
+FROM httpd
 COPY myapp /var/www/html/ 
 
 
