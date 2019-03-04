@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get clean
 COPY myapp /var/www/html/ 
 
-docker build -t test  -f Dockerfile .
+
